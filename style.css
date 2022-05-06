@@ -32,6 +32,7 @@ body {
   font-family: 'Overpass', sans-serif;
   min-height: 100vh;
 }
+
 .card-container {
     position: absolute;
     top: 50%;
@@ -40,25 +41,39 @@ body {
     color: var(--white);
     background-color: var(--very-dark-blue);
     border-radius: 10%;
-    width: 22rem;
-    height: 22rem;
+    width: 20rem;
+    height: 20rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    padding: 2rem;
+}
+.in-active { display: none; }
+.active { display: grid; }
+
+.how-container {
+    display: grid;
+    grid-column: 1/6;
 }
 .icon-star-container {
     background-color: var(--dark-blue);
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
+    display: grid;
+    grid-column: 1/2;
     grid-row: 1;
+    align-items: center;
+    justify-items: center;
 }
-h1 {
+.how-container > h1 {
     grid-column: 1/6;
     grid-row: 2;
+    margin: 0;
 }
-p {
+.how-container > p {
     grid-column: 1/6;
     grid-row: 3;
+    margin: 0;
 }
 .rating-container {
     grid-column: 1/6;
@@ -66,21 +81,31 @@ p {
 }
 .rating__radio-btn {
     background-color: var(--dark-blue);
+    color: var(--light-grey);
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
 }
-button {
-    grid-column: 2/5;
+.how-container > button {
+    grid-column: 1/6;
     grid-row: 5;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10rem;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-400);
+    letter-spacing: .1rem;
+    transition: .33s ease-out;
 }
-
-
-.in-active {
-    display: none;
+.rating-container > button:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
 }
-.active {
-    display: grid;
+.thank-you-container {
+
 }
 
 .attribution { 
