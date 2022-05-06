@@ -42,13 +42,37 @@ body {
     border-radius: 10%;
     width: 22rem;
     height: 22rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
-
-.circle-container {
+.icon-star-container {
     background-color: var(--dark-blue);
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
+    grid-row: 1;
+}
+h1 {
+    grid-column: 1/6;
+    grid-row: 2;
+}
+p {
+    grid-column: 1/6;
+    grid-row: 3;
+}
+.rating-container {
+    grid-column: 1/6;
+    grid-row: 4;
+}
+.rating__radio-btn {
+    background-color: var(--dark-blue);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+button {
+    grid-column: 2/5;
+    grid-row: 5;
 }
 
 
@@ -56,7 +80,7 @@ body {
     display: none;
 }
 .active {
-    display: block;
+    display: grid;
 }
 
 .attribution { 
@@ -66,6 +90,7 @@ body {
     transform: translate(-50%,-50%);
     font-size: 11px; 
     text-align: center; 
+    white-space: nowrap;
 }
     
 .attribution a { 
