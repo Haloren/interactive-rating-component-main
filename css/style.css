@@ -1,0 +1,126 @@
+/* 
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+/* Global defaults */
+* {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+}
+
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(216deg, 12%, 8%);
+  border-radius: 10%;
+  width: 20rem;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 2rem;
+}
+
+.in-active {
+  display: none;
+}
+
+.active {
+  display: grid;
+}
+
+.icon-star-container {
+  background-color: hsl(213deg, 19%, 18%);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1;
+  align-items: center;
+  justify-items: center;
+}
+
+.how-container {
+  display: grid;
+  grid-column: 1/6;
+}
+.how-container h1 {
+  grid-column: 1/6;
+  grid-row: 2;
+  margin: 0;
+}
+.how-container p {
+  grid-column: 1/6;
+  grid-row: 3;
+  margin: 0;
+}
+.how-container button {
+  grid-column: 1/6;
+  grid-row: 5;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  transition: 0.33s ease-out;
+}
+
+.rating-container {
+  grid-column: 1/6;
+  grid-row: 4;
+}
+.rating-container .rating__radio-btn {
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(217deg, 12%, 63%);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.rating-container button:hover {
+  cursor: pointer;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.thank-you-container {
+  display: grid;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
