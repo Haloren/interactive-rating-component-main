@@ -1,3 +1,4 @@
+@import 'variables', 'how-card', 'thank-you-card';
 /* 
 The designs were created to the following widths:
 - Mobile: 375px
@@ -5,26 +6,13 @@ The designs were created to the following widths:
 */
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 
-$fs-300: 0.9375rem;
-$fs-500: 1.375rem;
-$fs-700: 2rem;
-$fw-400: 400;
-$fw-700: 700;
-$ff-primary: 'Overpass', sans-serif;
-$orange: hsl(25, 97%, 53%);
-$white: hsl(0, 0%, 100%);
-$light-grey: hsl(217, 12%, 63%);
-$medium-grey: hsl(216, 12%, 54%);
-$dark-blue: hsl(213, 19%, 18%);
-$very-dark-blue: hsl(216, 12%, 8%);
-
 /* Global defaults */
 * { box-sizing: border-box; }
 
 *, *::before, *::after { box-sizing: inherit; }
 
 html:focus-within { scroll-behavior: smooth; }
-  
+
 body {
   text-rendering: optimizeSpeed;
   margin: 0;
@@ -50,69 +38,6 @@ body {
 .in-active { display: none; }
 .active { display: grid; }
 
-.icon-star-container {
-    background-color: $dark-blue;
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 1;
-    align-items: center;
-    justify-items: center;
-}
-
-.how-container {
-    display: grid;
-    grid-column: 1/6;
-    h1 {
-        grid-column: 1/6;
-        grid-row: 2;
-        margin: 0;
-    };
-    p {
-        grid-column: 1/6;
-        grid-row: 3;
-        margin: 0;
-    };
-    button {
-        grid-column: 1/6;
-        grid-row: 5;
-        background-color: $orange;
-        color: $white;
-        text-transform: uppercase;
-        border: 0;
-        border-radius: 10rem;
-        font-size: $fs-300;
-        font-weight: $fw-400;
-        letter-spacing: .1rem;
-        transition: .33s ease-out;
-    };
-}
-
-.rating-container {
-    grid-column: 1/6;
-    grid-row: 4;
-    .rating__radio-btn {
-        background-color: $dark-blue;
-        color: $light-grey;
-        height: 2.5rem;
-        width: 2.5rem;
-        border-radius: 50%;
-    };
-    button:hover {
-        cursor: pointer;
-        background-color: $white;
-        color: $orange;
-    };
-}
-
-
-.thank-you-container {
-    display: grid;
-}
-
-// Footer //
 .attribution { 
     position: fixed;
     bottom: 10px;
@@ -121,8 +46,7 @@ body {
     font-size: 11px; 
     text-align: center; 
     white-space: nowrap;
-}
-    
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+    a { 
+        color: hsl(228, 45%, 44%); 
+    };
 }

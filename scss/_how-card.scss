@@ -1,0 +1,56 @@
+.icon-star-container {
+    background-color: $dark-blue;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1;
+    align-items: center;
+    justify-items: center;
+}
+
+.how-content {
+    display: grid;
+    grid-column: 1/6;
+    h1 {
+        grid-column: 1/6;
+        grid-row: 2;
+        margin: 0;
+    };
+    p {
+        grid-column: 1/6;
+        grid-row: 3;
+        margin: 0;
+    };
+    button {
+        grid-column: 1/6;
+        grid-row: 5;
+        background-color: $orange;
+        color: $white;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: 10rem;
+        font-size: $fs-300;
+        font-weight: $fw-400;
+        letter-spacing: .1rem;
+        transition: .33s ease-out;
+    };
+}
+
+.rating-container {
+    grid-column: 1/6;
+    grid-row: 4;
+    .rating__radio-btn {
+        background-color: $dark-blue;
+        color: $light-grey;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+    };
+    button:hover {
+        cursor: pointer;
+        background-color: $white;
+        color: $orange;
+    };
+}

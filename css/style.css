@@ -1,9 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+.icon-star-container {
+  background-color: hsl(213deg, 19%, 18%);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1;
+  align-items: center;
+  justify-items: center;
+}
+
+.how-content {
+  display: grid;
+  grid-column: 1/6;
+}
+.how-content h1 {
+  grid-column: 1/6;
+  grid-row: 2;
+  margin: 0;
+}
+.how-content p {
+  grid-column: 1/6;
+  grid-row: 3;
+  margin: 0;
+}
+.how-content button {
+  grid-column: 1/6;
+  grid-row: 5;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  transition: 0.33s ease-out;
+}
+
+.rating-container {
+  grid-column: 1/6;
+  grid-row: 4;
+}
+.rating-container .rating__radio-btn {
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(217deg, 12%, 63%);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.rating-container button:hover {
+  cursor: pointer;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.thank-you-container {
+  display: grid;
+}
+
 /* 
 The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 */
-@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
 /* Global defaults */
 * {
   box-sizing: border-box;
@@ -48,67 +109,6 @@ body {
   display: grid;
 }
 
-.icon-star-container {
-  background-color: hsl(213deg, 19%, 18%);
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 1;
-  align-items: center;
-  justify-items: center;
-}
-
-.how-container {
-  display: grid;
-  grid-column: 1/6;
-}
-.how-container h1 {
-  grid-column: 1/6;
-  grid-row: 2;
-  margin: 0;
-}
-.how-container p {
-  grid-column: 1/6;
-  grid-row: 3;
-  margin: 0;
-}
-.how-container button {
-  grid-column: 1/6;
-  grid-row: 5;
-  background-color: hsl(25deg, 97%, 53%);
-  color: hsl(0deg, 0%, 100%);
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 10rem;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  letter-spacing: 0.1rem;
-  transition: 0.33s ease-out;
-}
-
-.rating-container {
-  grid-column: 1/6;
-  grid-row: 4;
-}
-.rating-container .rating__radio-btn {
-  background-color: hsl(213deg, 19%, 18%);
-  color: hsl(217deg, 12%, 63%);
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-}
-.rating-container button:hover {
-  cursor: pointer;
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(25deg, 97%, 53%);
-}
-
-.thank-you-container {
-  display: grid;
-}
-
 .attribution {
   position: fixed;
   bottom: 10px;
@@ -118,7 +118,6 @@ body {
   text-align: center;
   white-space: nowrap;
 }
-
 .attribution a {
   color: hsl(228deg, 45%, 44%);
 }
